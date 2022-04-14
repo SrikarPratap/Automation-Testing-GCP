@@ -17,7 +17,7 @@ steps:
 # Store the Test Results in cloud storage      
 artifacts:
   objects:
-    location: 'gs://testautomationbuildartifacts/ExecutionResults'
+    location: 'gs://project-bucket-cis680/ExecutionResults'
     paths: ['Results/Latest/*.txt','Results/Latest/summary.html']  
 images:
  - 'gcr.io/$PROJECT_ID/testautomation'
